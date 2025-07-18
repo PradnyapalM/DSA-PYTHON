@@ -416,7 +416,7 @@ and, or, not
 # ex
 """
 first = True
-second = True
+second = False
 
 print(first and second)
 print(first or second)
@@ -487,7 +487,7 @@ This function takes a string and evaluate the result
 # Output Statement (print)
 
 # form1
-"withour any character it will print new line"
+"without any character it will print new line"
 # print()
 
 # form2 print(string)
@@ -497,29 +497,37 @@ print("Rahul\nBhai") #new line
 print(3*"Vicky") # * and + operator allowed
 """
 # Form 3 print() with variable no of arguments
+"""
 a,b,c = 40,60,80
 print("The Values are: ", a,b,c) 
+"""
 
 # By default seperator space
+"""
 print(a,b,c, sep=',') 
 print(a,b,c, sep=':') 
 print(a,b,c, sep='=') 
+"""
 
 # Form 4 print() with end attribute
+"""
 print("Hello", end=" ")
 print("Bhai", end=" ")
 print("Kaisa", end=" ")
 print("Hai")
+"""
 
 # Form 5 print(object) statement
 # Pass any object like list(array), tuple, 
-
+"""
 list1 = [10,20,49]
 tuple1 = (80,80,50)
 print("list data", list1)
 print("tuple_data", tuple1)
+"""
 
 # form 6:- print(Sting, int, list) or any no of arguments
+"""
 name = "Aaksh"
 lan1 = "Java"
 lan2 = "Python"
@@ -527,6 +535,8 @@ age = 20
 
 print("Hello", name, "your age is", age)
 print("you are learing", lan1 , "and", lan2)
+"""
+
 
 # form 7: print(formated string)
 """
@@ -534,22 +544,88 @@ syntax:  print("formated string%variable/list)
 %d --> int
 %f--> float
 %s--> string
-"""
+
 a=10
 b=80.95
 c="Akash"
 print("Value of a is%d"%a)
 print("Value of b is%f"%b)
 print("Value of c is%s"%c)
+"""
+
 
 # Form 7 print() with replacement operator {} imp
-
+"""
 name = "Mia"
 salary = 56565
 bf = "Jonny"
 
 print("Hello {} your salary is {} and your friend {} is  waiting".format(name,salary,bf))
 print("Hello {} your salary is {} and your friend {} is  waiting".format(bf,salary,name))
+"""
+
+# Day 5 Slicing in String
+"""
+Slice means a piece
+[] this opertator is called slice operator.
+Which can use to retrive the parts of the string 
+"""
+
+# s="ATUL"
+# print(s[0])
+# print(s[-1])
+
+
+# Note Left to right +ve
+#      Right to left -ve
+
+# print(s[1:])
+
+"""
+Syntax: 
+s[beign:end:step]--> Return all characters from beign index to end -1 index
+"""
+  #  01234567
+s = "Learnings Python is very easy"
+# print(s[1:7]) #1to6 index of character print kro bol rha hai
+     # 1   7-1=6  
+# s[beign:end]
+
+# email = "mia@gmail.com"
+# print(email[0:3]) #mia
+print(s[1:7])
+print(s[1:7:2])
+# s[beign:end:step]
+print(s[1:7:3])
+
+# s[beign:end:step]
+# 0123456789101123
+
+s = "Learnings Python is very easy"
+print(s[1:19:2]) # earnings Python i
+# erig yhni
+# erig yhni
+
+# s[beign:end:step]  Syntax
+print(s[2:23:3]) # aisyoiv tan
+print(s[2:23:3]) # ais yo i v aksh
+
+# s = "arnings Python is very"
+# aisyoiv
+
+print(s[4:15:4])
+"nings Python" 
+#nst
+#nst
+# ---------
+print(s[:7]) # By default beign is zero(0)
+print(s[1:]) # end index is a last index of the string
+print(s[::]) # default string
+# print(s[::0]) # slice step cant be Zero(0)
+print(s[::-1]) # reverse a string
+
+
+
 
 
 
