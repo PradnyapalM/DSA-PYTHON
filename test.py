@@ -586,45 +586,93 @@ Syntax:
 s[beign:end:step]--> Return all characters from beign index to end -1 index
 """
   #  01234567
-s = "Learnings Python is very easy"
+# s = "Learnings Python is very easy"
 # print(s[1:7]) #1to6 index of character print kro bol rha hai
      # 1   7-1=6  
 # s[beign:end]
 
 # email = "mia@gmail.com"
 # print(email[0:3]) #mia
-print(s[1:7])
-print(s[1:7:2])
+# print(s[1:7])
+# print(s[1:7:2])
 # s[beign:end:step]
-print(s[1:7:3])
+# print(s[1:7:3])
 
 # s[beign:end:step]
 # 0123456789101123
 
-s = "Learnings Python is very easy"
-print(s[1:19:2]) # earnings Python i
+# s = "Learnings Python is very easy"
+# print(s[1:19:2]) # earnings Python i
 # erig yhni
 # erig yhni
 
 # s[beign:end:step]  Syntax
-print(s[2:23:3]) # aisyoiv tan
-print(s[2:23:3]) # ais yo i v aksh
+# print(s[2:23:3]) # aisyoiv tan
+# print(s[2:23:3]) # ais yo i v aksh
 
 # s = "arnings Python is very"
 # aisyoiv
 
-print(s[4:15:4])
-"nings Python" 
+# print(s[4:15:4])
+# "nings Python" 
 #nst
 #nst
 # ---------
-print(s[:7]) # By default beign is zero(0)
-print(s[1:]) # end index is a last index of the string
-print(s[::]) # default string
+# print(s[:7]) # By default beign is zero(0)
+# print(s[1:]) # end index is a last index of the string
+# print(s[::]) # default string
 # print(s[::0]) # slice step cant be Zero(0)
-print(s[::-1]) # reverse a string
+# print(s[::-1]) # reverse a string
 
+# Day 6 Behaviour of Slice operators
+"""
+s[beign:end:step]
+step value can be either +ve or -ve 
+1> IF +ve then it should be forword direction(left to right)
+and we have to consider "beign to end-1"
 
+2> if -ve then it should be backword direction(right to left)
+and we have to consider "beign to end+1"
+
+Note:- 
+1>In the forword direction if end value is zero(0)
+then the result is always empty 
+2>In the backword direction if end value is minus(negative)(-1)
+then the result is always empty
+"""
+# s = "abczdefgh"
+# print(s[1:0:1]) #empty
+# print(s[1:-1:-1]) #empty
+
+"""
+In forword direction:--->
+Default value beign : 0
+default value for end : length of string
+default step value is : 1 eg [3:8:1]
+"""
+
+"""
+In backword direction:--->
+Default value beign : -1
+default value for end : (length of string +1)
+"""
+
+"""
+data = "abcdefghi"
+print(data[-1:-7:-1]) #beign to end+1
+           # -1 to -6
+"""
+data = "abcdefghijk"
+print(data[-1:5:1]) #beign to end-1
+print(data[-2:-8:-5]) #"defghij" # je
+# print(data[10:1:-1]) beign end + 1 
+             #10 to 2
+# print(data[10])
+print(data[6:1:-1]) #beign to end +1
+# abcdefg
+print(data[1:6:-1])
+print(data[-1:-7:-1])
+print(data[1:0:-1]) #beign to end +1
 
 
 
