@@ -624,23 +624,22 @@ s[beign:end:step]--> Return all characters from beign index to end -1 index
 # print(s[::0]) # slice step cant be Zero(0)
 # print(s[::-1]) # reverse a string
 
-# Day 6 Behaviour of Slice operators
+# Day 6 Behaviour of Slice operators (IMP for interview)
 """
-s[beign:end:step]
+s[beign:end:step] syntax step 1,2,555+n
 step value can be either +ve or -ve 
 1> IF +ve then it should be forword direction(left to right)
 and we have to consider "beign to end-1"
-
-2> if -ve then it should be backword direction(right to left)
+2> If -ve then it should be backword direction(right to left)
 and we have to consider "beign to end+1"
-
+# ATUL
 Note:- 
 1>In the forword direction if end value is zero(0)
 then the result is always empty 
 2>In the backword direction if end value is minus(negative)(-1)
 then the result is always empty
 """
-# s = "abczdefgh"
+s = "abczdefgh"
 # print(s[1:0:1]) #empty
 # print(s[1:-1:-1]) #empty
 
@@ -657,22 +656,57 @@ Default value beign : -1
 default value for end : (length of string +1)
 """
 
-"""
-data = "abcdefghi"
-print(data[-1:-7:-1]) #beign to end+1
-           # -1 to -6
-"""
-data = "abcdefghijk"
-print(data[-1:5:1]) #beign to end-1
-print(data[-2:-8:-5]) #"defghij" # je
-# print(data[10:1:-1]) beign end + 1 
-             #10 to 2
-# print(data[10])
-print(data[6:1:-1]) #beign to end +1
+
+# data = "abcdefghi"
+# print(data[-1:-7:-1]) #beign to end+1
+      # cdefghi
+      # -1 to -7
+      # -1 to -7+1  defghi
+      # -1 to -6
+      # op defghi
+
+
+# data = "abcdefghijk"
+# print(data[-1:5:1]) #beign to end-1 forward direction
+#  -1 to 4 in forward direction
+
+# print(data[-2:-8:-5])
+# defghijk
+# defghij
+# -2 to -8 + 1 = > -2 to -7 end+1
+# efghij 
+# op=> je
+
+
+# print(data[10:1:-1]) #beign end + 1  bcdefghij
+#10 to 2
+# out:-   kjihgfedc
+# print(data[10]) 
+
+# data = "abcdefghijk"
+# print(data[6:1:-1]) #beign to end +1
+# 6 to 1
+# 6 to 1 +(end+1) = > 6 to 2
+# 
 # abcdefg
-print(data[1:6:-1])
-print(data[-1:-7:-1])
-print(data[1:0:-1]) #beign to end +1
+# cdefg
+# op gfedc end +1
+
+# data = "abcdefghijk"
+# print(data[8:1:-1])
+# ihgfedc 
+# abcdefghi end+1 8 to 2
+# cdefghi
+
+# data = "abcdefghijk"
+# print(data[1:6:-1])
+# start 1 and need to revers
+# print(data[-1:-7:-1])
+# -1 to -6
+# efghijk
+# fghijk
+# print(data[1:0:-1]) #beign to end +1
+
 
 
 
