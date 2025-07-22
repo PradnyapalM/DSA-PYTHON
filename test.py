@@ -707,15 +707,149 @@ default value for end : (length of string +1)
 # fghijk
 # print(data[1:0:-1]) #beign to end +1
 
+# Day 7 len() in-built Function
+
+# Q  To find the no of characters present in the string
+"""
+data =  "Atuls"
+len_of_the_string = len(data)
+print("Length of the String", len_of_the_string)  
+"""
+
+# Taking 2 string i/p from  keyboard
+# 1> Main string
+# 2>Substring
+# Substring present in the Main string
+
+# eg 
+# "Hi Atul welcome to the Class"
+# "welcome to the Class" 
+"""
+main_string = input("Enter the Main String: ")
+sub_string = input("Enter the Sub String: ")
+if sub_string in main_string:
+    print(sub_string, "is the vailable in the main string")
+else:
+    print(sub_string, "is not the vailable in the main string")
+"""
+# eg 
+# s = "ATUL"
+# print("z" in s)
+
+# Finding Substring
+"""
+# Forword direction
+1> find()
+2>index()
+for Backword direction
+3> rfind()
+4> rindex()
+"""
+# 1> find() : It returns index of first occurences of thre given substring.
+# If it is not available then it will get -1
+
+"""
+data = "Learning Python is very easy"
+print(data.find('Python')) # 
+print(data.find("Java"))
+print(data.find("r"))
+# eg for backword direction
+print(data.rfind("r"))
+
+# * find(substring, beign, end)
+# It always search python from beign index to end -1
+print(data.find('Python',5,20)) #9
+print(data.find('Java',5,20)) # -1
+"""
+"""
+index(): This method exactly same as find() method except that if 
+the specified substring is not available then we will get value error 
+"""
+ 
+# data = "Learning Python is very easy"
+# print(data.index("Python", 5,14))
+
+# Q if we don't want to print value error
+"""
+main_string = input("Enter the Main String: ")
+sub_string = input("Enter the Sub String: ")
 
 
+try:
+    main_string.index(sub_string)
+except ValueError:
+    print("Substring is not found")
+else:
+    print("Substring is found")
+"""
+# count()
+"""
+We can find no of occurences of the substring present in the given string
+by using count() method
+1> count(substring)
+2> count(substring, beign, end) (end-1)
+
+main_string= "abbbsdbfjkdsjksdnsdfnbba"
+sub_string = "a"
+print("The no of occu: ", main_string.count(sub_string))
+"""
 
 
+# Replacing a string with another string
+"""
+replace(oldstring, newstring)
 
+s = "Learing Python is very difficult"
+s1 = s.replace("difficult", "easy")
+print("output", s1)
+"""
 
+#  Splitting of string
+"""
+We can split the given string accourding to specified seprator
+by using split() 
+split(seprator) 
+default seprator is space
 
+data = "Vicky is my friend"
+out = data.split() 
+print(type(out))
+print(out)
 
+for x in out:
+    print(x)
 
+data = "25-05-2085"
+sp_data = data.split("-")
+print("date of data", sp_data)
+for x in sp_data:
+    print(x)
+
+data = "25:05:2085"
+sp_data = data.split(":")
+print("date of data", sp_data)
+for x in sp_data:
+    print(x)
+
+"""
+#  Join() Method
+
+"""
+We can join group of Strings (list or tuple) the given seprator
+
+syntax : 'seprator'.join(group of string)
+
+data = ["Akash", "Atul", "Ankit"]
+out = '-'.join(data)
+print(type(out))
+print(out)
+"""
+
+# Q WAP to remove spaces of the string using(list and join() method)
+data = "Atul is my friend"
+list = data.split() # value into the list
+out = "".join(list)
+print(out)
 
 
 
