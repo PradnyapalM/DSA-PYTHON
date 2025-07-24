@@ -774,7 +774,6 @@ the specified substring is not available then we will get value error
 main_string = input("Enter the Main String: ")
 sub_string = input("Enter the Sub String: ")
 
-
 try:
     main_string.index(sub_string)
 except ValueError:
@@ -846,10 +845,171 @@ print(out)
 """
 
 # Q WAP to remove spaces of the string using(list and join() method)
+"""
 data = "Atul is my friend"
 list = data.split() # value into the list
 out = "".join(list)
 print(out)
+"""
+
+# Day 8  Changing Case of String imp for interview
+# We have 4 methods to change the case of of String
+
+# 1> upper():- To convert all Charaters to UpperCase
+# 2 lower():- To convert all Charaters to lowercase
+# 3>swapcase():-  Lower to upper and upper to lower case
+# 4> title():- To convert all Charaters to TitleCase i.e first Capital
+# 5> capialized():- Only first character will be converted to upppercase and all
+# remaining characters can be converted to lower case
+
+"""
+Power-bi 
+numpy
+pandas
+sikit learn
+"""
+
+"""
+data = "Learning python is very easy"
+print(data.upper())
+print(data.lower())
+print(data.capitalize())
+print(data.swapcase())
+print(data.title())
+"""
+
+# Topic: Checking starting and ending part of the string
+"""
+1> startswith(substring)
+2> endswith(substring)
+"""
+
+# test@gmail.com
+# best@hotmail.com
+
+# data = "Learning python is very easy"
+# print(data.startswith('Learning')) #True
+# print(data.startswith('learning')) # False
+# print(data.endswith('easy')) # True
+
+#  Topic:- To check type of characters present in the string ### for IMP interview
+# 1> isalnum(): => (a to z, A to Z, 0 to 9)
+# 2 isaplha(): => (a to z, A to Z)
+# 3 isdigit(): => (0 to 9)
+# 4 islower(): => lowercase letters
+# 5 isupper(): => uppercase letters
+# 6 isspace(): => only spaces
+
+# data = "Test123456and789"
+# print(data.isdigit())
+# print(data.isalpha())
+# print(data.isalnum())
+# print(data.islower())
+# print(data.isupper())
+# print(data.istitle())
+# print(data.isspace())
+
+# for x in data:
+#     if x.isdigit():
+#         print(x, end="")
+        
+# Flow Control
+"""
+Describe the order in which statements will be executed at runtime
+"""
+# Conditional Statements
+# 1>  if                                                      
+# 2> if-elif
+# 3  if-elif-else
+
+# #Iterative Statements
+# 1> For  
+# 2> while
+
+# Transfer Statement
+# 1 break
+# 2> continue
+# 3> pass
+
+# Conditional Statements
+# 1> if statement
+
+"""
+syntax [if condition: statement]
+
+name = input("Enter Name: ")
+if name == "Aakash":
+    print("Hello Akash Good Morning")
+print("Good Night")
+"""
+# 2> if - else statement
+"""
+syntax: 
+if cond:
+    statement 1
+else:
+    statemen 2
+
+name = input("Enter Name: ")
+if name == "Aakash":
+    print("Hello Akash Good Morning")
+else:
+    print("Good Night")
+"""
+# 2> if-elif-else statement
+"""
+syntax: 
+if condition 1:
+    statement 1
+elif condition 2 :
+    statemen 2
+else:
+    Defalut statement
+
+Brand = input("Enter your Brand: ")
+if Brand == "Lamborghini":
+    print("Its a Child brand")
+elif Brand == "Audi":
+    print("Its a Girl Brand")
+elif Brand == "Tata":
+    print("Its a Legend Brand")
+else:
+    print("Other brands are not recommended")
+
+"""
+
+# Q WAP to print biggest no taking i/p from keyboard 2 no's
+
+# a= int(input("Enter your First Number:"))
+# b= int(input("Enter your Second Number:"))
+
+# if a>b:
+#   print("A is Bigger")
+# else:
+#   print("B is Bigger")
+
+# Q WAP to print biggest no taking i/p from keyboard 3 no's
+
+a= int(input("Enter your First Number:"))
+b= int(input("Enter your Second Number:"))
+c= int(input("Enter your third Number:"))
+
+if a>b and a>c:
+    print ("First Number is Bigger :",a)
+elif b>c:
+    print("Second  Number is Bigger :",b)
+   
+else:
+    print("Third Number is Bigger : ",c)
+
+
+
+
+
+
+
+
+
 
 
 
