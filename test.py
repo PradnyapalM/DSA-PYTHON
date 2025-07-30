@@ -990,22 +990,216 @@ else:
 
 # Q WAP to print biggest no taking i/p from keyboard 3 no's
 
-a= int(input("Enter your First Number:"))
-b= int(input("Enter your Second Number:"))
-c= int(input("Enter your third Number:"))
+# a= int(input("Enter your First Number:"))
+# b= int(input("Enter your Second Number:"))
+# c= int(input("Enter your third Number:"))
 
-if a>b and a>c:
-    print ("First Number is Bigger :",a)
-elif b>c:
-    print("Second  Number is Bigger :",b)
+# if a>b and a>c:
+#     print ("First Number is Bigger :",a)
+# elif b>c:
+#     print("Second  Number is Bigger :",b)
    
+# else:
+#     print("Third Number is Bigger : ",c)
+
+
+# Day 9  For Loop stared
+"""
+email_one = "akashsing@microsoft.com"
+email_two = "montyarora@hotmail.com"
+
+ans = email_one.split("@")[0]
+print(ans)
+
+'''
+
+# WAP to find no. is prime or not
+
+'''
+a = int(input("Enter a number: "))
+prime = 0
+for i in range(2, a):
+    if a % i == 0:
+        prime += 1
+        break
+    if prime > 0:
+        print("Prime number")
+    
+    else:
+        print("Not a prime number")
+
+
+a = int(input("Enter a number: ")
+'''
+For Loop :- For every element present in the sequence
+            can be : string, collection
+
+    Syntax :- for x in sequence:
+                body
+
+'''
+'''
+
+for i in range(5):
+    print("Good Morning ", i)
+
+'''
+
+'''
+
+for x in 1, 2, 3, 4, 5:
+    print("Good morning ", x)
+'''
+
+
+# WAP to print no. from 1 to 10
+
+#for i in range(1, 11):
+#    print(i)
+
+
+
+
+## range() funtion:-
+"""
+# Sequence of integers
+
+# syntax:- range()
+
+# for var in range(end):
+#     code/statement
+
+
+# data = range(4)
+# print(data)     #
+
+
+# Day 10 range with one Parameter
+
+# range(5) # ---->0to 4
+# range_list = list(range(0,5))
+# print("out", range_list)
+
+
+# range(0) # ---->0to 4
+# range_list = list(range(0,0))
+# print("out", range_list)
+
+
+# range(-5) # ---->0to 4
+# range_list = list(range(0,-5))
+# print("out", range_list) 
+
+# Q Wap to add sequence with the interger 2
+
+# for i in range(5):
+#     print(i+2) 
+
+#  Q WAP to sum the nos for 1 to 10
+
+# total_sum = 0
+# for i in range(1,11):
+#     # total_sum = total_sum + i
+#     total_sum+= i
+# print(total_sum)
+
+# Q  Wap to conctenate to connect or join serval strings that currently on 
+#  a list and string with the msg
+
+# words = ["for", "loops", "are", "powerfull"]
+# msg = ""
+# for i in words:
+#     msg+=i
+# print(msg)
+
+# # Q  Wap to check string is Palindrome or not 
+# "707"
+# "MOM"
+# "WOW"
+# "HannaH"
+# "LOL"
+
+# Q WAP to iterate the list of Values (len)
+
+# nums = [2,3,4,5,6]
+# for i in nums:
+#     print(i)
+
+# for i in range(len(nums)):
+#     print("Value",  nums[i], "At index", i)
+
+"""
+Value 2 At index 0
+Value 3 At index 1
+Value 4 At index 2
+Value 5 At index 3
+Value 6 At index 4
+"""
+
+
+# Q increment list by 2
+# nums = [2,3,4,5,6]
+# out = [4,5,6,7,8]
+
+# for i in range(len(nums)):
+#     nums[i] = nums[i]+2
+# print(nums)
+
+# Q Check even or odd from the list 
+# nums = [2,3,4,5,6]
+# for i in range(len(nums)):
+#     item = nums[i]
+#     if item%2==0:
+#         print("No is Even", nums[i])
+#     else:
+#         print("No is Odd", nums[i])
+
+# no = int(input("Enter a no"))
+# if no%2==0:
+#     print('Even no', no)
+# else:
+#     print('Odd no', no)
+
+
+# Q  Wap to check string is Palindrome or not  IMP for Interview
+"707"
+"MOM"
+"WOW"
+"HannaH"
+"LOL"
+
+"""
+# SOln = 1
+
+s = input("Enter a string: ")
+rev = ""
+for char in s:
+    rev = char + rev
+if s == rev:
+    print("Palindrome")
 else:
-    print("Third Number is Bigger : ",c)
+    print("Not Palindrome")
+"""
 
-
-
-
-
+"""
+soln =2
+s = input("Enter a string: ")
+if s == s[::-1]:
+    print("Palindrome")
+else:
+    print("Not palindrome")
+"""
+"""
+solution=3
+word = "HANNAH"
+# word = "AKASH"
+print("lenegth of word", len(word))
+is_palindrome = True
+for i in range(len(word)//2):
+    if word[i]!= word[len(word)-i-1]:
+        is_palindrome = False
+print(is_palindrome)
+"""
 
 
 
