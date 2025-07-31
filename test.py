@@ -1201,6 +1201,150 @@ for i in range(len(word)//2):
 print(is_palindrome)
 """
 
+# Day 12
+#  range() with Two Parameters
+"""
+syntax:--->
+range(start, stop)
+
+[start,start+1....stop-1]
+""" 
+
+# ex 
+# for num in range(2,6):
+#     print(num)
+# op:---
+"""
+2
+3
+4
+5
+"""
+# for num in 2,3,4,5:
+#     print(num)
+
+"""
+
+range(1,15)
+list(range(1,15)) #[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+len(list(range(1,15))) #14
+
+range(5,10)
+list(range(5,10)) #[5, 6, 7, 8, 9]
+len(list(range(5,10))) #5
+
+
+range(10,5)
+list(range(10,5)) #[]
+len(list(range(10,5))) #0
+
+
+range(5,5)
+list(range(5,5)) #[]
+len(list(range(5,5))) #0
+
+
+"""
+
+# Q WAP to multiply NO from 1 to 10
+
+# mul=1
+# for i in range(1,11):
+#     mul = mul * i
+# print("Multiplication of number from 1to 10 is:", mul)
+
+# Q WAP to prin a table of 2 
+# for i in range(1,11):
+#     table_starts_with = 2 * i
+#     print(table_starts_with)
+
+# Q WAP to print Part of string
+
+# word = "LOOPS"
+# for i in range(2, len(word)):
+#     print(word[i], end="")
+
+
+# Q WAP to find the Average of the data
+# data = [5,4,7,25,2,8,3]
+# total_sum = 0
+# count = 0
+# for i in range(len(data)):
+#     total_sum = total_sum + data[i]
+#     count = len(data)
+# print("Average of the data", total_sum//count)
+
+# Q WAP to find the Average of the upper half data
+"""
+data = [5,4,7,25,2,8,3]
+total_sum = 0
+count = 1
+for i in range(len(data)//2, len(data)):
+    total_sum = total_sum + data[i]
+    count = count + 1 # every iteration count will increase
+print("counter", count)
+print("Average of the data", total_sum//count)
+"""
+# Q WAP to print of length excluding the first and the 
+# last characters  (IMP interview)
+
+# word = "Programming"
+# out --> "rogrammin"
+"""
+soln-->1
+for i in range(1, len(word)-1):
+    print(word[i], end="")
+"""
+# Q WAP to print all the subtring of length excluding the first and the 
+# last characters  (IMP interview)
+# for i in range(1, len(word)-2):
+#     print(word[i:i+2])
+
+
+# range() with 3 parameters
+"""
+range(start, stop, step)
+start, start+step.......<max_valid>
+"""
+
+# for i in range(2,10,2):
+#     print(i)
+
+# for i in 2,4,6,8:
+#     print(i)
+
+"""
+range(5,20,6)
+list(range(5,20,6)) # [5, 11, 17]
+
+list(range(10,2,-1)) #[10, 9, 8, 7, 6, 5, 4, 3]
+list(range(0,15,2))
+"""
+
+# Q WAP to print every other characters in a string capitalized
+
+# word = "Hello world"
+# for i in range(0, len(word),2):
+#     print(word[i].capitalize(), end="")
+
+#  range() with Negative parameters
+"""
+range(stop)
+if stop<0 ---> []
+note---> if start<0 --> start, start+1....n, stop-1
+"""
+
+"""
+list(range(-5)) #[]
+list(range(-2,2)) # list(range(-2,2))
+list(range(2,-5)) # []
+list(range(-5,-2)) # list(range(-5,-2))
+list(range(7,1,-2)) # [7, 5, 3]
+list(range(1,7,-2)) #[]
+
+"""
+
+
 
 
 
