@@ -1201,7 +1201,7 @@ for i in range(len(word)//2):
 print(is_palindrome)
 """
 
-# Day 12
+# Day 11
 #  range() with Two Parameters
 """
 syntax:--->
@@ -1290,6 +1290,7 @@ print("Average of the data", total_sum//count)
 
 # word = "Programming"
 # out --> "rogrammin"
+
 """
 soln-->1
 for i in range(1, len(word)-1):
@@ -1343,6 +1344,150 @@ list(range(7,1,-2)) # [7, 5, 3]
 list(range(1,7,-2)) #[]
 
 """
+
+# Day 12
+
+"""
+Iterate the elements from Collection (string, list, tuple, dictionary..set)
+Syntax:-->
+for  <var> in <itertable>:
+        #code
+"""
+
+"""
+string
+for char in "LOOPS":
+    print(char)
+
+data = "LOOPS"
+# print(data[0])
+
+for i in range(1):
+    print("only:--", data[i])
+"""
+
+# LIST
+# for num in [10,20,30,40,50]:
+#     print(num)
+
+#Tuple
+# for num in (60,70,80,90):
+#     print(num)
+
+# SET
+
+# for num in {10,20,10,30,20,79}:
+#     print(num)
+
+# DICTIONARIES:
+
+# for key, value in {"a":1, "b":2}:
+#     print(key)
+
+# data = {"a":1, "b":2}
+# for k in data:
+#     # print(data.keys())
+#     print(k)
+
+# TOPIC enumerate()
+"""
+Purpose:--> To automatically keep track of a counter while iterating over an
+            iterables (counter + item)
+"""
+
+# Noramal Code
+# data_list = [ "a", "b", "c"]
+# index = 0
+# for element in data_list:
+#     # print(element)
+#     print("The item at index",index, "and the value is", element)
+#     # index = index + 1
+#     index +=1
+
+# Using Enumerate function()
+
+
+"""
+enumerate(data)---->enumerate object
+[(0,'a'),(1,'b'),(2,'c')]
+
+so 0,1,2 its nothing but the counter
+and by default counters with the zero
+"""
+
+
+
+# data_list = [ "a", "b", "c"]
+# # print(enumerate(data_list))
+
+# for index, item in enumerate(data_list):
+#     print("Element at index is: ", index, "and the value is: ", item)
+
+# for index, item in [(0, 'a'), (1, 'b')]:
+#     print("Element at index is: ", index, "and the value is: ", item)
+
+# Q WAP to find even or odd value using enumerate()
+# num_list = [5,2,7,8,9,77]
+
+# for index, item in enumerate(num_list):
+#     if item%2==0:
+#         print("even",item)
+#     else:
+#         print("odd", item)
+
+"""
+Type 2:--
+enumerate(<iterable>, <start>)
+data_list = [ "a", "b", "c"]
+enumerate(data_list,2)
+for index, item in enumerate(data_list,2):
+    print("Element at index is: ", index, "and the value is: ", item)    
+"""
+
+"""
+zip() function is to iterate two iterables simulteneously
+
+"""
+#  compare cosrresponding elements of list
+# a = [1,2,9,4]
+# b = [1,2,3,4]
+
+# are_equal=True
+# for i in range(len(a)):  
+#     if a[i]!=b[i]:
+#         are_equal = False
+# print(are_equal)
+
+"""
+using zip(a,b)-->object
+for <var1>, <var2> in zip(<itr1>,<itr2>)
+        #code
+"""
+# a = [1,2,9,4]
+# b = [1,2,3,4]
+# for num1, num2 in zip(a,b):
+#     print("a", num1, "--", "b", num2)
+
+# a = [1,2,3,4]
+# b = [1,2,3,4]
+# are_equal = True
+# for num1, num2 in zip(a,b):
+#     if num1!=num2:
+#         are_equal = False
+# print(are_equal)
+
+"""
+Advantages:-->
+No need to use indices
+More readables
+"""
+
+
+
+
+
+
+
 
 
 
