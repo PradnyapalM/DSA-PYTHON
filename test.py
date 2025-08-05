@@ -1482,19 +1482,125 @@ No need to use indices
 More readables
 """
 
+# Day 13 Sorted()
+
+"""
+Purpose:--> Return a sorted copy of the iterable to 
+            use it in the for loop
+"""
+
+# Q if we dont use any sorted
+# data = [6,2,3,1,8]
+# for num in data:
+#     print(num, end=" ")
+
+# print(f"using sorted function--", sorted(data))
+
+"""
+sytanx:--> sorted(<iterable>) --> 
+          This function is always return a sorted list
+"""
+
+"""
+Sorted in for Loop
+for <var> in sorted<iterable>: (it return a list)
+        #code
+1> A new sorted copy of the iterable 
+2> Dosent modify the original list
+3> It's applicable to any iterable.
+"""
+
+# data = [6,2,3,1,8]
+# for elem in sorted(data):
+#     print(elem, end="")
+
+# # for elem in [12368]:
+#     print(elem, end="")
+
+# data = [6,2,3,1,8]
+# print(sorted(data, reverse=True))
 
 
+# Topic reversed() function
+"""
+Purpose:--> To iterate over an iterable in reverse order
+            without mutating it
 
+Note:-- reversed() function always returns an object
+"""
 
+# data = [1,2,3,4]
+# print(reversed(data))
 
+# data = [1,2,3,4]
 
+# for num in reversed(data):
+#     print(num, end=" ")
 
+# Topic  while loop
 
+"""
+A loop that runs while a condition is true and 
+stop if the condition becomes false
 
+syntax:-->
+while<condtion>:
+    #code
 
+Note:--> 
+1>A while loop does not have a fixed number of iterations
+2>We can use while loop for finite and infinite times
+3> When we dont know advanced the number of iterations
+4> While loop do not update variable automatically
+"""
+# EG
+# i = 0
+# while i < 5:
+#     print(i)
+#     i = i + 1
 
+"""
+Infinite Loop
+Scenarios ---- | Intentional [break]|
+               |Unintentional|
 
+Common Causes:-->
+1> Not updatating a varible
+2> Updating wrong Variable
+"""
 
+# i = 0
+# while i<5:
+#     print(i)
+"""
+It will run infinitly bcs we are not increment the value of i
+"""
+# op = 4,3,2,1
+# x = 5
+# while x>=0:
+#     x = x-1
+#     print(x)
+# print("END")
+
+# Q WAP to user continue or discontinue the program
+
+continue_process = True
+while continue_process:
+    print(f"Enter 2 Intergers")
+    num1 = int(input("Enter number 1: "))
+    num2 = int(input("Enter number 2: "))
+    print("Sum of 2 Integers", num1+num2)
+ 
+    print("Would you like to enter 2 New integers")
+
+    ans = input("Please Enter 'YES' or 'NO' ")
+
+    # if ans.lower()=="no":
+    #     continue_process = False
+
+    if ans=="no" or ans=="NO":
+        continue_process = False
+print("Discontinue the program")
 
 
 
