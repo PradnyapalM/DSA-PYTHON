@@ -1,11 +1,11 @@
 """
-LIST(collections) (Group of elements in a single entity)
+LIST array in c/c++/java (collections) (Group of elements in a single entity)
 If we want to represent a group of individual objects as a single
 Entity where insertion order is preserved and duplicates are allowed
 then we should go for list.
 Note:-1> In List the elements will be placed within square brackets and 
          the comma seprator.
-      2> List is Mutable, SO we can change the contents
+      2> List is Mutable, SO we can change the contents.
       3> Index will play very important role and Python supports
       +ve and and -ve index. Positive means from left to right 
       and Negative means right to left.
@@ -159,4 +159,208 @@ D is available at +ve index:3 and -ve index:-1
 #     print(take_input, "is not available")
 
 
- 
+# Day 15
+# Topic Manipulating list Element
+
+# 1 Append Function():--> We can use append() function to 
+# add item at add the end of the list.
+
+# data = []
+# data.append("Akash")
+# data.append("Practice")
+# data.append("Kiya")
+# print(data)
+
+# Q Wap to add all the elements to list upto 100
+#  which is divisible by 10
+
+# lst = []
+
+# for i in range(1,101):
+#     if i % 10 == 0:
+#         lst.append(i)
+# print(lst)
+
+
+# 2>  Inserrt function():-  To insert an item at specified index positon
+
+# data = [1,2,3,4]
+# data.insert(1, 888)
+# print(data) [1, 888, 2, 3, 4]
+
+"""
+Note:-
+If the specified index is greator than max index then element
+will be inserted at last  position. if the specified index is 
+smaller that min index then the element be will inserted at 
+the first postion
+"""
+
+# data = [1,2,3,4,5]
+# data.insert(50,777)
+# print(data) #[1, 2, 3, 4, 5, 777]
+# data.insert(-12,222)
+# print(data) #[222, 1, 2, 3, 4, 5, 777]
+
+# H.W Diff betwn append() and insert() function (IQ)
+
+# 3 extend() function:--> To add all items of one list to another list
+
+# veg_items = ["Paneer", "Mix-Veg", "Dal-Tadka"]
+# nonVeg_items = ["Biryani", "Chicken Tandoori", "Shorma"]
+
+# veg_items.extend(nonVeg_items)
+# print(veg_items) # ['Paneer', 'Mix-Veg', 'Dal-Tadka', 'Biryani', 'Chicken Tandoori', 'Shorma']
+
+# 4 remove() function
+"""
+To remove the specified item form the list.If the item present
+multiple times then only first occurrence will be removed.
+"""
+
+# data = [10,20,10,30]
+# data.remove(10)
+# print(data) #[20, 10, 30]
+
+"""
+Note:- If the specified element not present in the list
+      so will get the value error.
+"""
+
+# data = [10,20,10,30]
+# data.remove(50)
+# print(data) # ValueError: list.remove(x): x not in list
+
+# 5 pop() function:-
+"""
+It removes and returns the last element of the list.
+This is the only function which is manipulates list and 
+returns some element.
+"""
+
+# data = [10,20,30,40]
+# print(data.pop()) # 40
+# print(data) #[10, 20, 30]
+
+"""
+Note:->
+If the list is empty then pop() function raises the index error
+"""
+# list_data = []
+# print(list_data.pop()) #IndexError: pop from empty list
+
+# Q How to remove the specified index element
+# data = [10,20,30,40]
+# print(data.pop(2)) #30
+# print(data) #[10, 20, 40]
+
+
+# List in Dynamic/Growable:-->
+"""
+append(), insert(), extend()--->Increasing
+remove(), pop() ---> To decrease the size
+"""
+
+# Topic:-- Ordering Elements of List
+
+# 1> reverse():- IT use to reverse the order of the element of the list
+
+# data = [10,20,30,40]
+# data.reverse()
+# print(data) #[40, 30, 20, 10]
+
+# 2> sort()
+"""
+Default orders
+1> for numbers:-- Ascendig order
+2> for string :-- Alphabetical Order
+"""
+
+# data = [10,5,0,20,15]
+# data.sort()
+# print(data) #[0, 5, 10, 15, 20]
+
+# data = ["dog", "cat", "tiger", "zebra", "lion"]
+# data.sort()
+# print(data) #['cat', 'dog', 'lion', 'tiger', 'zebra']
+
+"""
+sort accourding to reverse of default natural sorting 
+order by using reverse = True argument
+"""
+
+# data = [40,10,30,20]
+# data.sort()
+# print(data) #[10, 20, 30, 40]
+
+# data.sort(reverse=True)
+# print(data) #[40, 30, 20, 10]
+# data.sort(reverse=False)
+# print(data) #[10, 20, 30, 40] 
+
+# data = ["Mukul","Ankit","Jackson", 20, 40]
+# data.sort(reverse=True)
+# print(data) #['Mukul', 'Jackson', 'Ankit']
+
+"""
+Note:- 
+IF we use diffrent or mix data type in the list and when we apply 
+the sort() function then will get TypeError
+"""
+
+# Topic:--->  Aliasing and cloning of List objects (IQ)
+# Aliasing --> Shallow Copy
+# cloning --> Deep copy
+
+"""
+The process of giving another reference variable to the existing 
+list is called aliasing (Shallow Copy)
+"""
+
+# x = [10,20,30,40]
+# y = x
+# print(id(x)) #2547395744384
+# print(id(y)) #2547395744384
+
+"""
+Note:--
+The problem in this approach is using one reference variable if we
+are changing the content then those changes will reflected to the 
+other reference variable
+"""
+
+# x = [10,20,30,40]
+# y = x
+# y[1] = 777
+# print(x) #[10, 777, 30, 40]
+# print(id(x))
+# print(id(y))
+
+"""
+Note:- 
+To overcome this problem we should go for cloning (Deep copy).
+The process of creating exacalty duplicate(replica) independent
+object is called Deep copy(cloning)
+
+We can implement Deep copy by using slice operator or
+by using "copy()" function
+"""
+
+# 1> By using slice operator
+
+# x = [10,20,30,40]
+# y = x[:]
+# y[1] = 77
+# print(x)
+# print(id(x)) #1781725221504
+# print(id(y)) #1781727393472
+
+# 2> By using copy() function
+
+# x = [10,20,30,40,50,60]
+# y = x.copy()
+# y[1] = 888
+# print(x) #[10, 20, 30, 40, 50, 60]
+# print(y) #[10, 888, 30, 40, 50, 60]
+
+
