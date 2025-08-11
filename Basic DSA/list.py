@@ -182,7 +182,7 @@ D is available at +ve index:3 and -ve index:-1
 # print(lst)
 
 
-# 2>  Inserrt function():-  To insert an item at specified index positon
+# 2>  Insert function():-  To insert an item at specified index positon
 
 # data = [1,2,3,4]
 # data.insert(1, 888)
@@ -363,4 +363,159 @@ by using "copy()" function
 # print(x) #[10, 20, 30, 40, 50, 60]
 # print(y) #[10, 888, 30, 40, 50, 60]
 
+#  day 16 Topic Using Matheatical operations in the list objects
 
+# 1 concatination operator(+)
+
+# data1 = [10,20,30]
+# data2 = [40,50,60]
+
+# ans_data = data1 + data2
+# print(ans_data) #[10, 20, 30, 40, 50, 60]
+
+"""
+Note:- To use + operator compulsary both arguments should be list objects,
+      otherwise will get type error.
+"""
+
+# ans_data = data1+40
+# print(ans_data) #TypeError invalid case
+# ans_data = data1+[90]
+# print(ans_data) #[10, 20, 30, 90] valid case
+
+# 2 Repetation Operator(*)
+"""
+* opertor to repeat elements of list specified no of times
+"""
+# data1 = [10,20,30]
+# out_data = data1*3
+# print(out_data) #[10, 20, 30, 10, 20, 30, 10, 20, 30]
+
+# Topic Comparing List objects
+
+# x = ["Dog", "Cat", "Rat"]
+# y = ["Dog", "Cat", "Rat"]
+# z = ["DOG", "CAT", "RAT"]
+
+"""
+Note:--
+1> The no of elements should be same 
+2> oreder of elements
+3>The content of elements (case sensative)
+"""
+
+# print(x==y) #True
+# print(x==z) #False
+# print(x!=z) # True
+
+# print(ord("A")) #65
+# print(ord("a")) #97
+
+"""
+Note:-- 
+Whenever we are using relational operator (<,<=,>,>=)
+between list objects only first element comparison performed
+"""
+
+# x = [10,20,30,40,50]
+# y = [70]
+
+# print(x<y) #True
+
+# Topic Membership operator
+
+"""
+We can check whether element is a member of the list
+or not by using membeship operator
+
+
+syntax:-->
+[in operator]
+[not in operator]
+"""
+
+#  Topic clear() function
+
+"""
+We can use clear() function to 
+remove all the elements of the list
+"""
+
+# data = [10,20,30,40]
+# print(data) #[10, 20, 30, 40]
+# data.clear()
+# print(data) # []
+
+
+#  Topic Nested List
+"""
+Sometimes we can take one list inside
+anothe list such type of list is called nested list.
+"""
+
+# ex Nested list as a matrix
+
+data = [[10,20,30], [40,50,60],[70,80,90]]
+# print(data)
+# for x in data:
+#     print(x)
+
+"""
+[10, 20, 30]
+[40, 50, 60]
+[70, 80, 90]
+"""
+
+# print("Elements by Matrix Style")
+
+# for i in range(len(data)):
+#     for j in range(len(data[i])):
+#         print(data[i][j], end="")
+#         print()
+
+
+#  Topic Delete element using del keyword
+
+# data = [10,20,30,40]
+# print(data)
+# del data[2]
+# print(data)
+
+#  Topic List Comprehension (IQ) imp
+
+"""
+Creating a list objects from any iterabl
+objects like (list,tuple,dict,range,etc)
+based on some condition
+
+synatx:-->
+      
+      list[expression for item in list 
+                  if conditon]
+"""
+
+# without using list comprehension
+
+# data_list = []
+# for x in range(1,11):
+#     data_list.append(x)
+
+# print(data_list) #[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Using list comprehension
+
+# data_list = [x for x in range(1,11)]
+# print(data_list) #[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Q WAP to perform the square using List comprehension
+data_list = [x*x for x in range(1,11)]
+print(data_list) #[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# WAP to perform the square of even for 1 to 10 using List comprehension
+data_list = [x*x for x in range(1,11) if x%2==0]
+print(data_list) # [4, 16, 36, 64, 100]
+
+# WAP to double values form 1to100 where no should divisible by 3
+
+data_list = [2*x for x in range(1,101) if x%3==0]
+print(data_list)
