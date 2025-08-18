@@ -508,14 +508,33 @@ synatx:-->
 # print(data_list) #[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Q WAP to perform the square using List comprehension
-data_list = [x*x for x in range(1,11)]
-print(data_list) #[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# data_list = [x*x for x in range(1,11)]
+# print(data_list) #[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
-# WAP to perform the square of even for 1 to 10 using List comprehension
-data_list = [x*x for x in range(1,11) if x%2==0]
-print(data_list) # [4, 16, 36, 64, 100]
+# # WAP to perform the square of even for 1 to 10 using List comprehension
+# data_list = [x*x for x in range(1,11) if x%2==0]
+# print(data_list) # [4, 16, 36, 64, 100]
 
-# WAP to double values form 1to100 where no should divisible by 3
+# # WAP to double values form 1to100 where no should divisible by 3
 
-data_list = [2*x for x in range(1,101) if x%3==0]
-print(data_list)
+# data_list = [2*x for x in range(1,101) if x%3==0]
+# print(data_list)
+
+# Q Wap to select the No's that present in N1 but not in N2
+
+# N1 = [10,20,30,40]
+# N2 = [30,40,50,60]
+
+# out_list = [x for x in N1 if x not in N2]
+# print(out_list) #[10, 20]
+
+# Q WAP to convert string into the Uppercase using list comprehension
+
+# words = "welcome to the jungle"
+# words_into_list = words.split()
+# # print(words_into_list)
+# list_out = [w.upper() for w in words_into_list]
+# print(" ".join(list_out))
+
+
+
