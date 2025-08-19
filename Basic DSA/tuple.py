@@ -7,11 +7,11 @@ we create tuple object, we cannot perform any changes in that object
 2. If our data is fixed and never changes then we should go for 
   tuple.
 3. Insertion order is preserved
-4. Duplicate allowed
+4. Duplicates allowed
 5. Multiple object (Hetrogenious) are allowed
 6.We can represent Tuple elements within Paranthesis() and
 with comma seprator. Parathesis are optional but recommended to use
-7.We can preserve isertion order we can diffrentiate duplicates object 
+7.We can preserve insertion order we can diffrentiate duplicates object 
 by using index. Hence, index will play very imp role in tuple.
 
 Note:--> We should take special care about single valued Tuple.
@@ -105,17 +105,17 @@ to default natural sorting order
 #  We can create a tuple by packing a group of variables
 
 # for packing
-a=10
-b=20
-c=30
-t = a,b,c
-print(t) #(10, 20, 30)
-print(type(t)) #<class 'tuple'>
+# a=10
+# b=20
+# c=30
+# t = a,b,c
+# print(t) #(10, 20, 30)
+# print(type(t)) #<class 'tuple'>
 
 # For unpacking :- Reverse processs of Packing
-t = (10,20,30,40)
-a,b,c,d=t
-print(a,b,c,d) # 10 20 30 40
+# t = (10,20,30,40)
+# a,b,c,d=t
+# print(a,b,c,d) # 10 20 30 40
 
 """
 Note:-- Tuple comprehension not applicable bcs the objects is created 
@@ -123,3 +123,4 @@ i.e generator
 """
 
 # HW Diff btween list vs Tuple ----IQ
+
