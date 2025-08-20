@@ -1,3 +1,5 @@
+# DAY 17
+
 """
 1> If we want to represent a group of unique values as a single entity then
 we should go for the set.
@@ -6,7 +8,7 @@ we should go for the set.
 4>Indexing or slicing are not allowed .
 5> Hetrogenous items are allowed
 6>Set objects are mutable i.e once we creates a set objects
-we can perform any cnahges in that object based on our requirements
+we can perform any changes in that object based on our requirements
 7> Use curly braces with comma seprator {}
 8>Its uses for Apply mathematical operations like union,
 intersection, etc on set objects 
@@ -179,3 +181,5 @@ x.intersection(y) or x&y
 #     if x not in l1:
 #         l1.append(x)
 # print(l1) #[10, 20, 30, 60, 90]
+
+
