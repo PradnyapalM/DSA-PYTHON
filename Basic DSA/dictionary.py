@@ -153,6 +153,79 @@ key-->500---value-->Shyam
 # print(sum_out)
 
 
+# Day 19
+
+# Q  Wap to find no occurances of each letter present in the given string??
+# word="abbabac" IQ
+"""
+a-->3  
+b-->3
+c--->1
+"""
+# {a:3,b:3,c:1}
+
+# d = {}
+# for each_word in word:
+#     # Solution 1
+#     # if each_word not in d:
+#     #     d[each_word] = 1
+#     # else:
+#     #     d[each_word] = d[each_word] + 1
+
+#     # Solution 2
+#     d[each_word]=d.get(each_word,0)+1
+# print(d)
+
+# for key, val in d.items():
+#     print(f"key-->{key}--value--{val}")
+# """
+# key-->a--value--3
+# key-->b--value--3
+# key-->c--value--1
+# """
+
+# Q Wap to find No of occurances of each vowel present in the
+# given string and string taking input from the keyboard
+
+# word = input("Enter the String or word: ")
+# vowel = {'a','e','i','o','u'}
+# d = {}
+# for x in word.lower():
+#     if x in vowel:
+#         d[x] = d.get(x,0)+1
+# for key, val in d.items():
+#     print(f"{key}-ocured--{val}--times")
+
+# Topic Dictionary Comprehension
+
+"""
+Dictionary Comprehension is possible in the dictionaries
+"""
+# []
+# {}
+# square = {x:x*x for x in range(1,6)}
+# print(square) #{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
