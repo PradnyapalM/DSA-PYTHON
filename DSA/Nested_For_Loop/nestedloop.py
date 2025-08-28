@@ -53,16 +53,15 @@ for <var1> in <iter1>:
 * * * * *
 """
 
-rows = 5
-
-for i in range(1, rows+1):
-    # Printing the space
-    for j in range(rows-i):
-        print(" ", end="")
-    #Printing the star
-    for k in range(i):
-        print("*", end=" ")
-    print()
+# rows = 5
+# for i in range(1, rows+1):
+#     # Printing the space
+#     for j in range(rows-i):
+#         print(" ", end="")
+#     #Printing the star
+#     for k in range(i):
+#         print("*", end=" ")
+#     print()
 
 """
     *
