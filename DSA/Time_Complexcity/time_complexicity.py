@@ -124,4 +124,105 @@ ex: f(n) = 2n+3 can be written as O(n)
 
 
 """
+# day28
+
+# Topic Important things of Theta notation
+
+"""
+# 1 if f(n) = 0 cg(n) then f(n) = Ocg(n) and f(n) = __^__cg(n)
+and g(n) = O f(n) and g(n) = __^__f(n)
+
+2. Theta is usefull to represents time complexity when we know 
+the exact bond. 
+for example, time complexity to find sum, max,min in an array is 0(n)
+
+3. {n^4/2, n^2/,...2n^2, 2n^2+1000n, 4n^2+2nlogn+30.....   } E 0(n^2)
+"""
+
+# Day 28
+
+#  Topic subsequent loops (ek ke baad ke loops)
+
+"""
+i = 0
+
+while i <n:   # 0(n)
+    i = i + 2
+
+i = 1
+while i<n:   # 0 log(n)
+    i = i * 3
+
+i=1
+while i <100: # 0(1)
+    i = i + 1
+
+step 1:-- Calculate each oder of growth of loop
+step2:- Add them and find or calculate the higher order of growth
+
+0(n)+0 log(n) + 0(1)
+
+ans = 0(n)
+"""
+
+# Exmp 7: Nested loop
+
+"""
+i = 0
+while i < n:
+    j = 1
+    while j<n:
+        j = j*2
+    i = i + 1
+    #some const value
+    # time work
+step 1:-- Calculate inner loop of oder of growth.
+step 2: then Calculate outer loop
+step 3: Multiply both the loop to calculate
+final order of growth of nested for loop.
+"""
+# exp 8 mixed loops
+
+"""
+i = 0
+while i < n:
+    j=1
+    while j<n:
+        j = j*2
+    i = i + 1
+
+i = 0
+while i < n:
+    j=1
+    while j<n:
+        j = j+1
+    i = i + 1
+
+"""
+
+# exmp 9 Multiple input
+"""
+i = 0
+while i < n:
+    j = 1
+    while j<n:      # 0(nlogn)
+        j = j * 2
+    i = i + 2
+                        +             =   0(nlogn) + 0(m^2) = 0(nlogn+m^2)
+i = 0
+while i<m:
+    j=1
+    whle j<m:      #0(m^2)
+        j = j + 1
+    i = i + 1
+
+
+"""
+ 
+
+
+
+
+
+
 
