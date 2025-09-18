@@ -110,7 +110,62 @@ l0, l1,l2....li-1......li...ln-1
 
 # print(getMax(l))
 
-    
+# Hashmap (Hashmap is nothing but the dictionary) Hashing
+
+"""
+Search 
+insert    # average time is complxity is O(1)
+delete
+
+# No useful for
+1. Finding closest value -- AVL Tree
+2. Sorted data----AVL Tree
+3. Prefix Searching -- Tries
+
+# Application of Hashing
+1.Dictionaries
+2.Database Indexing
+3.Crytography
+4.Cashes
+5.Symbol Table
+6.Compiler interpreter
+7.Routers
+8.Getting data from databases
+"""
+# Topic Hashing Function
+# Topic How  Hashing Function Works
+"""
+1. Should always map large key to small key
+2. Should Generate Values from 0 to m-1
+3.Should be fast O(1) for integer and O(n) for string and length "len n"
+4.Should uniformly distributed large keys into hash table slots.
+
+Example of Hash Function:-->
+1.h(large - key) = lagrge-key%m
+2. for strings, weighted sum
+str[] = "abcd"
+(str[0]*x^0 + str[1] * x^1+str[2] * x^2 + str[3] * x^3) % m
+3. Uniersal Hashing
+""" 
+#  Topic Collision Hashing
+"""
+If we know keys in advance, then it can perfect Hashing.
+If we do not know keys then we use one of the following chaining
+1.Chaining
+2.Open Addressing
+    *-> Linear probing
+    *-> Quadractic Probing
+    *-> Double Hashing
+"""
+
+# Topic Chaining (Collision Handling)
+
+"""
+Performance:--
+m = no.of slots in Hash Table 
+n = no.of keys to be inserted
+
+"""
 
 
 
