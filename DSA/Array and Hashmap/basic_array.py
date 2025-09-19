@@ -167,6 +167,47 @@ n = no.of keys to be inserted
 
 """
 
+class MyHash:
+    def __init__(self,b):
+        self.BUCKET = b
+        self.table = [[] for x in range(b)]
+
+    def insert(self, x):
+        i = x % self.BUCKET
+        self.table[i].append(x)
+
+    def remove(self, x):
+        i = x % self.BUCKET
+        if x in self.table[i]:
+            self.table[i].remove(x)
+    
+    def search(self,x):
+        i = x % self.BUCKET
+        return x in self.table[i]
+    
+    def PrintTable(self):
+        print(self.table)
+
+b = int(input("Enter the size of hashmap Table: "))
+obj = MyHash(b)
+x = int(input("Enter the value that you want to insert: "))
+y= int(input("Enter the value that you want to insert: "))
+z = int(input("Enter the value that you want to insert: "))
+obj.insert(x)
+obj.insert(y)
+obj.insert(z)
+obj.PrintTable()
+# Lets serch the insert data
+s = int(input("Enter the value that you want to search: "))
+print(obj.search(s))
+r = int(input("Enter the value that you want to remove: "))
+print(obj.remove(r))
+obj.PrintTable()
+
+
+
+
+
 
 
 
